@@ -16,10 +16,51 @@ main{
 .container{
     margin: auto;
     width: 80%;
-    height: 860px;
+    height: 875px;
     background-color: gray;
     display: flex;
     position: fixed;
-    top: 35px;
+    top: 25px;
     left: 185px;
+}
+.col {
+    width: 35%;
+    height: 100%;
+}
+.col_2{
+    width: calc(100% - 35%);
+    height: 100%;
+}
+.profile{
+    width: 100%;
+    height: 68px;
+    background-color: #E9EBEB;
+    border: 1px solid rgb(202, 200, 200);
+}
+.notifications{
+    width: 100%;
+    height: 75px;
+    background-color:  #8EDAFC;
+}
+.search {
+    width: 100%;
+    height: 48px;
+    background-color: #E9EBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search > div {
+    width: 40px;
+    height: 80%;
+    background-color: white;
+    color: #969c9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search > input {
+    width: 80%;
+    height: 80%;
+    border: none;
 }
