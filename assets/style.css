@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color:#DBDBD2;
+}
+.header{
+    width: 100%;
+    height: 130px;
+    background-color: #009688;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    height: 860px;
+    background-color: gray;
+    display: flex;
+    position: fixed;
+    top: 35px;
+    left: 185px;
+}
