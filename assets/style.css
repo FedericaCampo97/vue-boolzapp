@@ -54,7 +54,7 @@ main{
     align-items: center;
     width: 130px;
     height: 60px;
-    color: #bebeba;
+    color: #a7a7a6;
     justify-content: end;
 }
 .icons_profile > i{
@@ -93,7 +93,7 @@ main{
     margin-left: 12px;
 }
 .text_notification > a {
-    font-size: 13px;
+    font-size: 10px;
     color: gray;
 }
 .search {
@@ -118,6 +118,36 @@ main{
     height: 80%;
     border: none;
 }
+.profile_user {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.user_photo {
+    width: 57px;
+    height: 57px;
+    border-radius: 30px;
+    background-image: url(./img/avatar_1.jpg);
+    background-size: cover;
+}
+.name_user {
+    margin-left: 10px;
+}
+.name_user > span {
+    font-size: 13px;
+    color: gray;
+}
+.icon_chat {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.icon_chat > i {
+    margin: 0 9px;
+    font-size: 20px;
+    color: #a7a7a6;
+}
 .chat_messages{
     width: 100%;
     height: calc(100% - 68px - 75px);
@@ -127,4 +157,23 @@ main{
     width: 100%;
     height: 75px;
     background-color: #E9EBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon_smile{
+    width: 80px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: auto;
+}
+.footer_chat > div > input {
+    width: 800px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    padding: 7px;
 }
