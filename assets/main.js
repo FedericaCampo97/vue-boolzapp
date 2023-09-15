@@ -169,13 +169,17 @@ createApp({
     data() {
        return {
         contacts: [],
-        contactActive: {}
+        contactActive: {},
+        indexActive: 0
+
        }
        
     },
     methods: {
         showChat(i){
             this.contactActive = this.contacts[i]
+            this.indexActive = i
+
 
         }
         

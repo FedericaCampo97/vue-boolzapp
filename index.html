@@ -43,7 +43,7 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <div class="group_chat">
-                    <div class="user_chat" v-for="(contact, index) in contacts" @click="showChat(index)">
+                    <div class="user_chat" :class="{user_active: index == indexActive }" v-for="(contact, index) in contacts" @click="showChat(index)">
                         <div class="info_user">
                             <img :src="contact.avatar" alt="">
                             <div>
