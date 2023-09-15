@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <main>
+    <main id="app">
         <div class="header"></div>
         
         <div class="container">
@@ -26,7 +26,6 @@
                         <i class="fa-solid fa-message"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
-                    
                 </div>
                 <div class="notifications">
                     <div class="icon_notification">
@@ -42,6 +41,26 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
+                </div>
+                <div class="group_chat">
+                    <div class="user_chat" v-for="contact in contacts">
+
+                       
+                        <div class="info_user">
+                            <img :src="./assets/img/avatar_1.jpg" alt="">
+                            <div>
+                                <h4>
+                                    {{contact.name}}
+                                </h4>
+                                <span>Ultimo messaggio inviato</span>
+                            </div>
+                        </div>
+                        <div class="hour">
+                            <p>12:00</p>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
             <div class="col_2">
@@ -78,5 +97,8 @@
         
         
     </main>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./assets/main.js"></script>
 </body>
 </html>

@@ -20,7 +20,6 @@ main{
     margin: auto;
     width: 80%;
     height: 875px;
-    background-color: gray;
     display: flex;
     position: fixed;
     top: 25px;
@@ -117,6 +116,37 @@ main{
     width: 80%;
     height: 80%;
     border: none;
+}
+.group_chat {
+    width: 100%;
+    height: calc(100% - 48px - 75px - 68px);
+}
+.user_chat {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.info_user {
+    display: flex;
+}
+.info_user > div {
+    margin-left: 10px;
+}
+.info_user > div > span {
+    font-size: 13px;
+    color: gray;
+}
+.info_user > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.hour > p {
+    font-size: 13px;
+    color: gray;
 }
 .profile_user {
     width: 300px;
