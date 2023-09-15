@@ -182,14 +182,14 @@ main{
     background-image: url(../img/mine.jpg);
     overflow-y: scroll;
 }
-.block_message {
+.block_sent {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
     padding: 10px;
 }
-.sent {
+.block_sent > div {
     max-width: 400px;
     max-height: 200px;
     background-color: #D5F9BA;
@@ -198,14 +198,14 @@ main{
     margin-right: 40px;
 
 }
-.block_message1 {
+.block_received {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
     padding: 10px;
 }
-.received {
+.block_received > div {
     max-width: 400px;
     max-height: 200px;
     background-color: white;

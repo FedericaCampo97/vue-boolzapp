@@ -81,16 +81,13 @@
                     </div>
                 </div>
                 <div class="chat_messages">
-                    <div class="block_message">
-                        <div class="sent">
-                            <p></p>
+                    <div :class="{block_sent: messageBlock.status == 'sent' , block_received: messageBlock.status == 'received'}" v-for="(messageBlock, index) in contactActive.messages">
+                        <div>
+                            <p>
+                                {{messageBlock.message}}
+                            </p>
                         </div>
 
-                    </div>
-                    <div class="block_message1">
-                        <div class="received">
-                            <p></p>
-                        </div>
                     </div>
                 </div>
                 <div class="footer_chat">
