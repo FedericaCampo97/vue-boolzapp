@@ -168,15 +168,21 @@ const { createApp } = Vue
 createApp({
     data() {
        return {
-        contacts: []
+        contacts: [],
+        contactActive: {}
        }
        
     },
     methods: {
+        showChat(i){
+            this.contactActive = this.contacts[i]
+
+        }
         
     },
     mounted() {
         this.contacts = contacts
+        this.contactActive = contacts[0]
 
     }
 }).mount('#app')

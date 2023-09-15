@@ -43,9 +43,7 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <div class="group_chat">
-                    <div class="user_chat" v-for="contact in contacts">
-
-                       
+                    <div class="user_chat" v-for="(contact, index) in contacts" @click="showChat(index)">
                         <div class="info_user">
                             <img :src="contact.avatar" alt="">
                             <div>
@@ -66,9 +64,13 @@
             <div class="col_2">
                 <div class="profile">
                     <div class="profile_user">
-                        <div class="user_photo"></div>
+                        
+                        <img :src="contactActive.avatar" alt="">
+                        
                         <div class="name_user">
-                            <p>Michele</p>
+                            <p>
+                                {{contactActive.name}}
+                            </p>
                             <span>Ultimo accesso oggi alle 12:00</span>
                         </div>
                     </div>
@@ -78,7 +80,19 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-                <div class="chat_messages"></div>
+                <div class="chat_messages">
+                    <div class="block_message">
+                        <div class="sent">
+                            <p>Ciao come va? Oggi matteo ha già fatto due partite</p>
+                        </div>
+
+                    </div>
+                    <div class="block_message1">
+                        <div class="received">
+                            <p>Ciao come va? Oggi matteo ha già fatto due partite</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="footer_chat">
                     <div class="icon_smile">
                         <i class="fa-regular fa-face-smile"></i>

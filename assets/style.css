@@ -153,12 +153,10 @@ main{
     display: flex;
     align-items: center;
 }
-.user_photo {
-    width: 57px;
-    height: 57px;
+.profile_user > img {
+    width: 60px;
+    height: 60px;
     border-radius: 30px;
-    background-image: url(./img/avatar_1.jpg);
-    background-size: cover;
 }
 .name_user {
     margin-left: 10px;
@@ -181,7 +179,39 @@ main{
 .chat_messages{
     width: 100%;
     height: calc(100% - 68px - 75px);
-    background-image: url(./img/mine.jpg);
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+}
+.block_message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+}
+.sent {
+    max-width: 400px;
+    max-height: 200px;
+    background-color: #D5F9BA;
+    border-radius: 10px;
+    padding: 17px;
+    margin-right: 40px;
+
+}
+.block_message1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+}
+.received {
+    max-width: 400px;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 17px;
+    margin-left: 40px;
 }
 .footer_chat{
     width: 100%;
