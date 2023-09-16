@@ -95,7 +95,7 @@
                         <i class="fa-regular fa-face-smile"></i>
                     </div>
                     <div>
-                        <input type="text" placeholder="Scrivi un messaggio">
+                        <input type="text" placeholder="Scrivi un messaggio" v-on:keyup.enter="sendMessage" v-model="inputText">
                     </div>
                     <div class="icon_smile">
                         <i class="fa-solid fa-microphone"></i>

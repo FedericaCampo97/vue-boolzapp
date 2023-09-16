@@ -28,6 +28,7 @@ main{
 .col {
     width: 35%;
     height: 100%;
+    background-color: white;
 }
 .col_2{
     width: calc(100% - 35%);
@@ -120,11 +121,12 @@ main{
 .group_chat {
     width: 100%;
     height: calc(100% - 48px - 75px - 68px);
+    overflow-y: scroll;
 }
 .user_chat {
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid rgba(184, 179, 179, 0.525);
     display: flex;
     justify-content: space-between;
     padding: 10px;

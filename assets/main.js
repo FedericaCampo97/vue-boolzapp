@@ -170,8 +170,9 @@ createApp({
        return {
         contacts: [],
         contactActive: {},
-        indexActive: 0
-
+        indexActive: 0,
+        inputText: ''
+  
        }
        
     },
@@ -179,8 +180,14 @@ createApp({
         showChat(i){
             this.contactActive = this.contacts[i]
             this.indexActive = i
-
-
+        },
+        sendMessage(){
+            this.contactActive.messages.push({
+                date: new Date(),
+                message: this.inputText,
+                status: 'sent'
+            })
+            this.inputText = ''
         }
         
     },
