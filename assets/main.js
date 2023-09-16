@@ -182,12 +182,21 @@ createApp({
             this.indexActive = i
         },
         sendMessage(){
-            this.contactActive.messages.push({
-                date: new Date(),
-                message: this.inputText,
-                status: 'sent'
-            })
-            this.inputText = ''
+            if(this.inputText){
+                this.contactActive.messages.push({
+                    date: new Date(),
+                    message: this.inputText,
+                    status: 'sent'
+                })
+                this.inputText = ''
+                setTimeout(function(){
+                    this.contactActive.messages.push({
+                        date: new Date(),
+                        message: 'Ok!',
+                        status: 'received'
+                    })
+                }.bind(this), 1000);
+            } 
         }
         
     },
