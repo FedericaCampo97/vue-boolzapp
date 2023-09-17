@@ -206,6 +206,12 @@ createApp({
                 }
             })
 
+        },
+        functionTest(date){
+            let newDate = new Date (date);
+            let hour = newDate.getHours();
+            let minutes = newDate.getMinutes();
+            return hour + ':' + minutes
         }
     },
     mounted() {
