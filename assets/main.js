@@ -201,7 +201,8 @@ createApp({
         searchUsers(){
             console.log(this.inputSearch)
             this.contacts = contacts.filter(element => {
-                if(element.name.includes(this.inputSearch)){
+                let upperName = element.name.toUpperCase()
+                if(upperName.includes(this.inputSearch.toUpperCase())){
                     return element
                 }
             })
