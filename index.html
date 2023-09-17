@@ -40,7 +40,7 @@
                     <div>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" v-on:keyup="searchUsers()" v-model="inputSearch">
                 </div>
                 <div class="group_chat">
                     <div class="user_chat" :class="{user_active: index == indexActive }" v-for="(contact, index) in contacts" @click="showChat(index)">

@@ -171,8 +171,8 @@ createApp({
         contacts: [],
         contactActive: {},
         indexActive: 0,
-        inputText: ''
-  
+        inputText: '',
+        inputSearch: ''
        }
        
     },
@@ -197,8 +197,11 @@ createApp({
                     })
                 }.bind(this), 1000);
             } 
+        },
+        searchUsers(){
+            console.log(this.inputSearch)
+
         }
-        
     },
     mounted() {
         this.contacts = contacts
