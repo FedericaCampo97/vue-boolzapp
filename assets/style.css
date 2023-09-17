@@ -117,6 +117,7 @@ main{
     width: 80%;
     height: 80%;
     border: none;
+    padding: 4px;
 }
 .group_chat {
     width: 100%;
@@ -199,10 +200,9 @@ main{
     max-height: 200px;
     background-color: #D5F9BA;
     border-radius: 10px;
-    padding: 17px;
-    margin-right: 40px;
-
+    padding: 17px 70px;
 }
+
 .block_received {
     width: 100%;
     display: flex;
@@ -217,6 +217,11 @@ main{
     border-radius: 10px;
     padding: 17px;
     margin-left: 40px;
+}
+.hour_message{
+    width: 60px;
+    padding: 4px;
+    
 }
 .footer_chat{
     width: 100%;
