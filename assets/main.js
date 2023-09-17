@@ -200,6 +200,11 @@ createApp({
         },
         searchUsers(){
             console.log(this.inputSearch)
+            this.contacts = contacts.filter(element => {
+                if(element.name.includes(this.inputSearch)){
+                    return element
+                }
+            })
 
         }
     },
