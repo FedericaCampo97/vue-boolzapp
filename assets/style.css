@@ -60,7 +60,7 @@ main{
 .icons_profile > i{
     margin: 0 8px;
     font-size: 22px;
-
+    cursor: pointer;
 }
 .photo_profile {
     width: 60px;
@@ -113,6 +113,9 @@ main{
     justify-content: center;
     align-items: center;
 }
+.search > div > i {
+    cursor: pointer;
+}
 .search > input {
     width: 80%;
     height: 80%;
@@ -131,6 +134,7 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    cursor: pointer;
 }
 .user_active{
     background-color: rgba(163, 158, 158, 0.462);
@@ -181,6 +185,7 @@ main{
     margin: 0 9px;
     font-size: 20px;
     color: #a7a7a6;
+    cursor: pointer;
 }
 .chat_messages{
     width: 100%;
@@ -242,6 +247,9 @@ main{
     justify-content: center;
     font-size: 24px;
     margin: auto;
+}
+.icon_smile > i {
+    cursor: pointer;
 }
 .footer_chat > div > input {
     width: 800px;

@@ -199,17 +199,19 @@ createApp({
             } 
         },
         searchUsers(){
-            console.log(this.inputSearch)
             this.contacts = contacts.filter(element => {
                 let upperName = element.name.toUpperCase()
                 if(upperName.includes(this.inputSearch.toUpperCase())){
                     return element
                 }
+
             })
 
         },
         functionTest(date){
-            let newDate = new Date (date);
+            
+            let newDate = new Date(date);
+            console.log(newDate)
             let hour = newDate.getHours();
             let minutes = newDate.getMinutes();
             return hour + ':' + minutes
